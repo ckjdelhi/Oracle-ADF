@@ -19,7 +19,7 @@ public class EmpDataCustomVOImpl extends ViewObjectImpl {
      */
     protected void executeQueryForCollection(Object qc, Object[] params,
                                              int noUserParams) {
-        SearchList sl = new SearchList(getOrderByClause());
+        ProxyDataSourceObject sl = new ProxyDataSourceObject(getOrderByClause());
         sl.setDataFromService();
         setUserDataForCollection(qc, sl);
         super.executeQueryForCollection(qc, params, noUserParams);
@@ -32,7 +32,7 @@ public class EmpDataCustomVOImpl extends ViewObjectImpl {
     protected boolean hasNextForCollection(Object qc) {
         //        boolean bRet = super.hasNextForCollection(qc);
         //        return bRet;
-        if (((SearchList)getUserDataForCollection(qc)).getIterator().hasNext())
+        if (((ProxyDataSourceObject)getUserDataForCollection(qc)).getIterator().hasNext())
             return true;
         else {
             setFetchCompleteForCollection(qc, true);
@@ -51,7 +51,7 @@ public class EmpDataCustomVOImpl extends ViewObjectImpl {
 
         ViewRowImpl row = createNewRowForCollection(qc);
         EmpData nextRow =
-            (EmpData)((SearchList)getUserDataForCollection(qc)).getIterator().next();
+            (EmpData)((ProxyDataSourceObject)getUserDataForCollection(qc)).getIterator().next();
         populateAttributeForRow(row, 0, nextRow.getIDC());
         populateAttributeForRow(row, 1, nextRow.getUSRCODE());
         populateAttributeForRow(row, 2, nextRow.getEMPNAME());
@@ -65,7 +65,7 @@ public class EmpDataCustomVOImpl extends ViewObjectImpl {
      * getQueryHitCount - overridden for custom java data source support.
      */
     public long getQueryHitCount(ViewRowSetImpl viewRowSet) {
-        return ((SearchList)getUserDataForCollection(viewRowSet.getQueryCollection())).getData().size();
+        return ((ProxyDataSourceObject)getUserDataForCollection(viewRowSet.getQueryCollection())).getData().size();
 
     }
 
