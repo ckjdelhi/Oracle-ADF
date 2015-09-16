@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<skins xmlns="http://myfaces.apache.org/trinidad/skin">
- <skin-addition>
-  <skin-id>simple.desktop</skin-id>
-  <style-sheet-name>voda/styles/voda-simple-desktop.css</style-sheet-name>
-  <bundle-name>com.virtusa.voda.core.faces.resource.VodaSimpleDesktopBundle</bundle-name>
- </skin-addition>
-</skins>
