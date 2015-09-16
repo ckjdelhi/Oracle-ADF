@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<JLibraryNode nselem="JLibraryNode" class="oracle.jdeveloper.library.JLibraryNode" deployedByDefault="true" xmlns="http://xmlns.oracle.com/jdeveloper/110000jlibrarynode">
+   <classPath>
+      <entries>
+         <Item path="../Project1/lib/commons-lang-2.4.jar" jar-entry=""/>
+         <Item path="../Project1/lib/jackson-annotations-2.2.3.jar" jar-entry=""/>
+         <Item path="../Project1/lib/jackson-core-2.2.3.jar" jar-entry=""/>
+         <Item path="../Project1/lib/jackson-databind-2.2.3.jar" jar-entry=""/>
+         <Item path="../Project1/lib/commons-codec-1.9.jar" jar-entry=""/>
+         <Item path="../Project1/lib/commons-dbutils-1.6.jar" jar-entry=""/>
+         <Item path="../CommonUtility/deploy/CommonUtility.jar" jar-entry=""/>
+         <Item path="../Project1/lib/adf-share-ca.jar" jar-entry=""/>
+         <Item path="../Project1/lib/com.bea.core.apache.commons.lang_2.1.0.jar" jar-entry=""/>
+         <Item path="../Project1/lib/core-renderer.jar" jar-entry=""/>
+         <Item path="../Project1/lib/freemarker-2.3.8.jar" jar-entry=""/>
+         <Item path="../Project1/lib/itext-paulo-155.jar" jar-entry=""/>
+         <Item path="../Project1/lib/itextpdf-5.1.3.jar" jar-entry=""/>
+         <Item path="../Project1/lib/javax.ws.rs.jar" jar-entry=""/>
+         <Item path="../Project1/lib/jersey-bundle-1.8.jar" jar-entry=""/>
+         <Item path="../Project1/lib/poi-3.9-20121203.jar" jar-entry=""/>
+         <Item path="../Project1/lib/poi-ooxml-3.9-20121203.jar" jar-entry=""/>
+         <Item path="../Project1/lib/poi-ooxml-schemas-3.9-20121203.jar" jar-entry=""/>
+         <Item path="../Project1/lib/jaxrpc-api.jar" jar-entry=""/>
+         <Item path="../Project1/lib/OnePortalUtilities.jar" jar-entry=""/>
+      </entries>
+   </classPath>
+   <docPath/>
+   <locked>true</locked>
+   <name>ADF Library Dependencies</name>
+   <sourcePath/>
+</JLibraryNode>

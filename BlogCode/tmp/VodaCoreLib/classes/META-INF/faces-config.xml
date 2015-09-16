@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee">
+  <application></application>
+  <component>
+    <component-type>com.virtusa.voda.core.Slider</component-type>
+    <component-class>com.virtusa.voda.core.faces.component.Slider</component-class>
+    <facet>
+      <facet-name>dataSheet</facet-name>
+    </facet>
+  </component>
+  <render-kit>
+    <render-kit-id>oracle.adf.rich</render-kit-id>
+    <renderer>
+      <component-family>org.apache.myfaces.trinidad.Object</component-family>
+      <renderer-type>com.virtusa.voda.core.Slider</renderer-type>
+      <renderer-class>com.virtusa.voda.core.faces.render.SliderRenderer</renderer-class>
+      <facet>
+        <facet-name>dataSheet</facet-name>
+      </facet>
+    </renderer>
+  </render-kit>
+</faces-config>
